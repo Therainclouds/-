@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(200deg, rgb(7, 162, 239), rgb(14, 255, 231));
+}
+.login-box {
+  position: relative;
+  width: 320px;
+}
+.input-box {
+  display: flex;
+  /* 弹性布局方向 */
+  flex-direction: column;
+}
+.input-box input {
+  height: 40px;
+  border-radius: 3px;
+  /* 首行缩进15px */
+  text-indent: 15px;
+  outline: none;
+  border: none;
+  margin-bottom: 15px;
+}
+/* 设置焦点（焦点就是指账号密码框上闪烁的|）出现时input框的轮廓 */
+.input-box input:focus {
+  /* 轮廓 */
+  outline: 1px solid rgb(18, 134, 243);
+}
+.input-box button {
+  border: none;
+  height: 45px;
+  background: lightseagreen;
+  color: aliceblue;
+  border-radius: 3px;
+  /* 设置鼠标移动到登录按钮上的样式 */
+  cursor: pointer;
+}
+/* 装饰 */
