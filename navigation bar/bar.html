@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>导航栏</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="warpper">
+        <!-- nav标签是定义导航连接标签，一般不会使用这个标签，因为它只作为标注一个导航连接的区域（也就是导航栏） -->
+        <nav>
+            <input type="radio" name="tab" id="home" checked>
+            <input type="radio" name="tab" id="comment">
+            <input type="radio" name="tab" id="envelope">
+            <input type="radio" name="tab" id="heard">
+            <input type="radio" name="tab" id="user">
+            <!-- <label> 标签为 input 元素定义标注（标记） -->
+            <label for="home" class="home"><a href="">
+                    <i class="fa fa-home" aria-hidden="true"></i>
+                    首页
+                </a></label>
+            <label for="comment" class="comment"><a href="">
+                    <i class="fa fa-comment" aria-hidden="true"></i>
+                    聊天
+                </a></label>
+            <label for="envelope" class="envelope"><a href="">
+                    <i class="fa fa-envelope" aria-hidden="true"></i>
+                    消息
+
+                </a></label>
+            <label for="heard" class="heard"><a href="">
+                    <i class="fa fa-heart" aria-hidden="true"></i>
+                    收藏
+                </a></label>
+            <label for="user" class="user"><a href="">
+                    <i class="fa fa-user" aria-hidden="true"></i>
+                    个人
+                </a></label>
+            <div class="table">
+
+            </div>
+        </nav>
+    </div>
+
+</body>
+
+</html>
