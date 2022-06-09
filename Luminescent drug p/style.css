@@ -48,6 +48,7 @@ section {
 /* 创建::before伪类元素为body类进行装饰 */
 .body::before {
   content: "";
+  color: red;
   position: absolute;
   transform: translateX(-50%);
   left: 50%;
@@ -58,6 +59,7 @@ section {
   border-radius: 50%;
   box-shadow: 0 10px #222;
 }
+/* after 和before他是联级的属性，可以在同一个类，或者ID下进行连续使用 */
 /* 创建after伪类元素为body类进行最后的元素装饰 */
 .body::after {
   content: "";
